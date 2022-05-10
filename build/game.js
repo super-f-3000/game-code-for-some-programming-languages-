@@ -1,10 +1,11 @@
 const GAME = {
-  "start": function() {
-    this.languages = [];
-  },
-  "language": class {
-    constructor () {
-
+  "languages": [],
+  "addLanguage": function (name, languageName) {
+    if (!GAME.languages[name]) {
+      Game.languages[name] = {
+        "name": languageName,
+        "words": {}
+      }
     }
   }
 }
