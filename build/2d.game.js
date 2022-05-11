@@ -15,9 +15,9 @@ const GAME = {
   "2dObject": class {
     constructor() {
       this.position = new GAME.Vector2();
+      this.rotation = new GAME.Vector2();
       this.scale = new GAME.Vetor2();
       this.userData = {};
-      
     }
   }
 }
