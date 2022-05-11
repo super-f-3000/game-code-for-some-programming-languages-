@@ -12,14 +12,14 @@ const GAME = {
       element.addEventListener(event, Function);
     }
   },
-  "2dObject": class {
+  "Object2D": class {
     constructor() {
       this.position = new GAME.Vector2();
       this.rotation = new GAME.Vector2();
       this.scale = new GAME.Vetor2();
       this.userData = {};
       this.name = "";
-      this.type = "Object2d";
+      this.type = "Object2D";
     }
   }
 }
