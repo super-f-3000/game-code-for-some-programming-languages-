@@ -5,5 +5,5 @@ this api help you to make a game in some programming languages
 <script src="2d.game.js"></script>
 ```
 ```javascript
-
+const scene = new GAME.Scene();
 ```
