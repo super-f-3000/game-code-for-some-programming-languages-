@@ -30,5 +30,11 @@ const GAME = {
       this.name = name;
       GAME.Fonts.push(this);
     }
+  },
+  "Scene" class {
+    constructor() {
+      this = new GAME.Object2D();
+      this.type = "2D Scene";
+    }
   }
 }
