@@ -7,3 +7,7 @@ this api help you to make a game in some programming languages
 ```javascript
 const scene = new GAME.Scene();
 ```
+# python 2D game usage
+```python
+import tkinter
+```
