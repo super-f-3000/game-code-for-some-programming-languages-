@@ -16,6 +16,8 @@ const GAME = {
     constructor() {
       this.position = new GAME.Vector2();
       this.scale = new GAME.Vetor2();
+      this.userData = {};
+      
     }
   }
 }
