@@ -19,5 +19,14 @@ scene = Scene()
 using GAME;
 using System;
 
-Scene scene = new Scene();
+namespace program
+{
+  class game
+  {
+    static void Main(string[], args)
+    {
+      Scene scene = new Scene();
+    }
+  }
+}
 ```
