@@ -2,8 +2,9 @@ const languages = []
 const GAME = {
   "Code_Version": "0.0.01",
   "Vector2": class {
-    constructor () {
-      
+    constructor (x = 0, y = 0) {
+      this.x = x;
+      this.y = y;
     }
   }
   "KeyEvent": class {
