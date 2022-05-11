@@ -20,6 +20,7 @@ const GAME = {
       this.userData = {};
       this.name = "";
       this.type = "Object2D";
+      this.children = [];
     }
   }
 }
