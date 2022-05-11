@@ -18,6 +18,8 @@ const GAME = {
       this.rotation = new GAME.Vector2();
       this.scale = new GAME.Vetor2();
       this.userData = {};
+      this.name = "";
+      this.type = "Object2d";
     }
   }
 }
