@@ -11,4 +11,6 @@ const scene = new GAME.Scene();
 ```python
 import 2d.game
 import tkinter
+
+scene = Scene()
 ```
