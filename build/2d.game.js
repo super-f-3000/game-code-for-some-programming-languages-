@@ -1,6 +1,7 @@
 const languages = []
 const GAME = {
   "Code_Version": "0.0.01",
+  "Fonts": [],
   "Vector2": class {
     constructor (x = 0, y = 0) {
       this.x = x;
@@ -21,6 +22,13 @@ const GAME = {
       this.name = "";
       this.type = "Object2D";
       this.children = [];
+    }
+  },
+  "FontLoader": class {
+    constructor(src, name) {
+      this.url = src;
+      this.name = name;
+      GAME.Fonts.push(this);
     }
   }
 }
