@@ -9,5 +9,6 @@ const scene = new GAME.Scene();
 ```
 # python 2D game usage
 ```python
+import 2d.game
 import tkinter
 ```
