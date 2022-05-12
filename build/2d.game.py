@@ -7,11 +7,17 @@ class Vector2:
     self.x = x
     self.y = y
 
-class Object2D:
-  def init(self):
+class Object2D (object):
+  def init(self, name):
     self.position = Vector2(0, 0)
     self.rotation = Vector2(0, 0)
     self.scale = Vector2(1, 1)
-    self.name = ""
+    self.name = name
     self.userData = json.loads("{}")
+    self.children = []
+
+class Scene (Object2D):
+  def init(self):
+    self.type = "GAME.Scene"
+    self.background = None
     
