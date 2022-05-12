@@ -17,7 +17,6 @@ scene = Scene()
 # c# 2D game usage
 ```cs
 using GAME;
-using System;
 
 namespace program
 {
