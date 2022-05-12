@@ -20,7 +20,6 @@ const GAME = {
       this.scale = new GAME.Vetor2(1, 1);
       this.userData = {};
       this.name = "";
-      this.type = "Object2D";
       this.children = [];
     }
   },
@@ -31,10 +30,10 @@ const GAME = {
       GAME.Fonts.push(this);
     }
   },
-  "Scene" class {
+  "Scene" class extends GAME.Object2D {
     constructor() {
-      this = new GAME.Object2D();
-      this.type = "2D Scene";
+      super();
+      this.type = "GAME.Scene";
     }
   }
 }
