@@ -17,7 +17,7 @@ const GAME = {
     constructor() {
       this.position = new GAME.Vector2();
       this.rotation = new GAME.Vector2();
-      this.scale = new GAME.Vetor2();
+      this.scale = new GAME.Vetor2(1, 1);
       this.userData = {};
       this.name = "";
       this.type = "Object2D";
