@@ -7,8 +7,10 @@ class dialogLine {
         this.title = "";
       }
       if (parameters.texts) {
-        if (typeof parameters.texts === "object") {
+        if (parameters.texts === []) {
           this.texts = parameters.texts;
+        }else if (parameters.texts === undefined) {
+          this.texts = [];
         }else{
           console.error("parameters.texts has to be an array");
           this.texts = [];
