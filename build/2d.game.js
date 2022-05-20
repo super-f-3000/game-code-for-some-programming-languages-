@@ -7,7 +7,7 @@ class dialogLine {
         this.title = "";
       }
       if (parameters.texts) {
-        if (parameters.texts === []) {
+        if (typeof parameters.texts === "object") {
           this.texts = parameters.texts;
         }else if (parameters.texts === undefined) {
           this.texts = [];
