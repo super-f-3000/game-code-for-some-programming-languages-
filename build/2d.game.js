@@ -6,6 +6,14 @@ class dialogLine {
       }else{
         this.title = "";
       }
+      if (parameters.texts) {
+        if (typeof parameters.texts === "object") {
+          this.texts = parameters.texts;
+        }else{
+          console.error("parameters.texts has to be an array");
+          this.texts = [];
+        }
+      }
     }else{
       console.error("in this class you have to use an object");
     }
