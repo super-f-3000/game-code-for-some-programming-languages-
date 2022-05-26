@@ -25,12 +25,23 @@ namespace GAME
     string name = "";
     object[] userData = new object[];
     object[] children = new object[];
-  }
-  public class Element
-  {
-    public Element ()
+    public static void Add (Element obj)
     {
-      
+      if (obj.type = "GAME.Element class") {
+        this.children.add(obj);
+      }
+    }
+  }
+  public class Element : Object2D
+  {
+    string type = "GAME.Element class";
+    public Element (string elemType, string Text)
+    {
+      if (elemType == "Button") {
+        Button element = new Button();
+      }
+      name = Text;
+      element.Text = name;
     }
   }
   public class Scene : Object2D
