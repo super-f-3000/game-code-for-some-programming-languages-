@@ -27,7 +27,7 @@ namespace GAME
     object[] children = new object[];
     public static void Add (Element obj)
     {
-      if (obj.type = "GAME.Element class") {
+      if (obj.type == "GAME.Element class") {
         this.children.add(obj);
       }
     }
@@ -47,5 +47,22 @@ namespace GAME
   public class Scene : Object2D
   {
     string type = "GAME.Scene class";
+    Size maxSize;
+    Size minSize:
+    public Scene (Size max, Size min)
+    {
+      maxSize = max;
+      minSize = min;
+    }
+  }
+  public class Renderer : Form
+  {
+    public static void render (Scene scene)
+    {
+      if (scene.type == "GAME.Scene class") {
+        this.Text = scene.name;
+        Application.Run(this);
+      }
+    }
   }
 }
