@@ -5,11 +5,7 @@ namespace GAME
 {
   public class UserData
   {
-    bool IA;
-    public UserData ()
-    {
-      IA = false;
-    }
+    bool IA = false
   }
   public class Vector2
   {
@@ -26,12 +22,19 @@ namespace GAME
     Vector2 position = new Vector2(0, 0);
     Vector2 rotation = new Vector2(0, 0);
     Vector2 scale = new Vector2(1, 1);
-    string name;
+    string name = "";
     object[] userData = new object[];
     object[] children = new object[];
-    public Object2D ()
+  }
+  public class Element
+  {
+    public Element ()
     {
-      name = "";
+      
     }
+  }
+  public class Scene : Object2D
+  {
+    string type = "GAME.Scene class";
   }
 }
