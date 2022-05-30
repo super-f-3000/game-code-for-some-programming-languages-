@@ -15,3 +15,10 @@ example:
 ```cs
 Scene scene = new Scene("my game", new Size(500, 500), new Size(500, 500));
 ```
+
+# 3. Creating a camera
+using the class Camera()
+example
+```cs
+Camera camera = new Camera();
+```
